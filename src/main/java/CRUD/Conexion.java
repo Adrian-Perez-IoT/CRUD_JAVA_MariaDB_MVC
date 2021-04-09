@@ -17,7 +17,7 @@ public class Conexion {
             cx= (Connection)DriverManager.getConnection(url,user,password);
 //            System.out.println("Se conecto satisfactoriamente");
         } catch (ClassNotFoundException | SQLException ex) {
-            System.out.println("No se conecto por motivo: " + ex.getMessage());
+            System.out.println("No se conecto por motivo : " + ex.getMessage());
         }
         return cx;
     }
